@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Campus friend - BIT"
+            android:fontFamily="@font/opensans"
+            android:textSize="24sp"
+            android:textColor="@color/mtrl_textinput_default_box_stroke_color"
+            android:layout_margin="20dp"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:layout_margin="5dp"
+            android:alignmentMode="alignMargins"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard5"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/mapicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/opensans"
+                    android:text="BIT Map"
+                    android:textColor="@color/white_85"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard1"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/teal"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:layout_constraintLeft_toRightOf="@+id/centre_guideline"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainCard0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="130dp"
+                    android:fontFamily="@font/opensans"
+                    android:text="Lost and Found"
+                    android:textColor="@color/white_85"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/lost" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard2"
+                android:clickable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/dark_green"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/card3_event"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:gravity="center"
+                    android:text="@string/events"
+                    android:textSize="20sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/white_85"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard3"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                app:cardBackgroundColor="@color/orange"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/card5_docs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/opensans"
+                    android:gravity="center"
+                    android:text="@string/timetables_datesheets_etc"
+                    android:textColor="@color/white_85"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard4"
+                app:cardBackgroundColor="@color/colorSearch"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.9"
+                    android:src="@drawable/card_teach"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/teach"
+                    android:textSize="@dimen/mainCardTextSize"
+                    android:fontFamily="@font/opensans"
+                    android:textColor="@color/white_85" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mainCard0"
+                android:clickable="true"
+                android:layout_width="165dp"
+                android:layout_height="165dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/BlueGrey900"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/card1_sell"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buy_sell"
+                    android:fontFamily="@font/opensans"
+                    android:textSize="20dp"
+                    android:textColor="@color/white_85"
+                    android:layout_marginTop="130dp"
+                    android:layout_gravity="center_horizontal"
+                    tools:ignore="RtlSymmetry"/>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <com.alan.alansdk.button.AlanButton
+            android:id="@+id/alan_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            app:button_horizontal_align="left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </LinearLayout>
+
+    <!--<androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+      <androidx.constraintlayout.widget.Guideline
+              android:id="@+id/centre_guideline"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              app:layout_constraintGuide_percent="0.5"/>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard0"
+              android:foreground="?android:attr/selectableItemBackground"
+              app:cardBackgroundColor="@color/BlueGrey900"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:clickable="true"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toLeftOf="@id/centre_guideline"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_side"
+              android:layout_marginEnd="@dimen/card_margin_centre"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|bottom"
+                  android:layout_margin="16dp"
+                  android:text="@string/buy_sell"
+                  android:textSize="@dimen/mainCardTextSize"
+                  android:textColor="@color/white_85"
+                  />
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:adjustViewBounds="true"
+                  android:layout_marginStart="32dp"
+                  android:layout_marginEnd="32dp"
+                  android:layout_marginTop="20dp"
+                  android:alpha="0.9"
+                  android:src="@drawable/card1_sell"/>
+
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard1"
+              app:cardBackgroundColor="@color/colorAccent"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toRightOf="@id/centre_guideline"
+              app:layout_constraintRight_toRightOf="parent"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_centre"
+              android:layout_marginEnd="@dimen/card_margin_side"
+              >
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="8dp"
+                  android:layout_marginEnd="8dp"
+                  android:layout_gravity="center"
+                  android:adjustViewBounds="true"
+                  android:alpha="0.9"
+                  android:src="@drawable/card2_lost"/>
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard2"
+              app:cardBackgroundColor="@color/dark_green"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toLeftOf="@id/centre_guideline"
+              app:layout_constraintTop_toBottomOf="@id/mainCard0"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_side"
+              android:layout_marginEnd="@dimen/card_margin_centre"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="16dp"
+                  android:gravity="center"
+                  android:layout_gravity="center|bottom"
+                  android:text="@string/events"
+                  android:textColor="@color/white_85"
+                  android:textSize="@dimen/mainCardTextSize"
+                  />
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:adjustViewBounds="true"
+                  android:layout_marginStart="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:layout_marginTop="20dp"
+                  android:alpha="0.9"
+                  android:src="@drawable/card3_event"/>
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard3"
+              app:cardBackgroundColor="@color/black_trans180"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintLeft_toRightOf="@id/centre_guideline"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mainCard0"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_centre"
+              android:layout_marginEnd="@dimen/card_margin_side"
+              >
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|bottom"
+                  android:layout_marginBottom="6dp"
+                  android:layout_marginStart="6dp"
+                  android:layout_marginEnd="6dp"
+                  android:gravity="center"
+                  android:text="@string/timetables_datesheets_etc"
+                  android:textSize="20sp"
+                  android:textStyle="normal"
+                  android:textColor="@color/white_85"
+                  />
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|top"
+                  android:adjustViewBounds="true"
+                  android:layout_marginTop="16dp"
+                  android:src="@drawable/card5_docs"/>
+
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard4"
+              app:cardBackgroundColor="@color/colorSearch"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toLeftOf="@id/centre_guideline"
+              app:layout_constraintTop_toBottomOf="@id/mainCard2"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_side"
+              android:layout_marginEnd="@dimen/card_margin_centre"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center|end"
+                  android:layout_marginEnd="10dp"
+                  android:text="@string/teach"
+                  android:textSize="@dimen/mainCardTextSize"
+                  android:textColor="@color/white_85"
+                  />
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:adjustViewBounds="true"
+                  android:alpha="0.9"
+                  android:src="@drawable/card_teach"/>
+
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+          <com.blackboxindia.PostIT.CustomViews.SquareCard
+              android:id="@+id/mainCard5"
+              app:cardBackgroundColor="@color/dark_blue"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:background="@drawable/ripple2"
+              app:cardElevation="@dimen/mainCardElevation"
+              app:cardCornerRadius="@dimen/mainCardCornerRadius"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintLeft_toRightOf="@id/centre_guideline"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mainCard2"
+              android:layout_marginTop="@dimen/card_margin_top"
+              android:layout_marginStart="@dimen/card_margin_centre"
+              android:layout_marginEnd="@dimen/card_margin_side"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="12dp"
+                  android:layout_gravity="top|end"
+                  android:gravity="center"
+                  android:text="@string/broadcast"
+                  android:layout_marginTop="14dp"
+                  android:layout_marginEnd="9dp"
+                  android:textSize="24sp"
+                  android:textStyle="normal"
+                  android:textColor="@color/white_85"
+                  />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="42dp"
+                  android:paddingStart="3dp"
+                  android:paddingBottom="3dp"
+                  android:adjustViewBounds="true"
+                  android:layout_gravity="bottom|start"
+                  android:src="@drawable/card6_broadcast"
+                  android:alpha="0.9"
+                  tools:ignUnexpected implicit cast to `DrawerLayout`: layout tag was `RelativeLayout`ore="RtlSymmetry" />
+
+          </com.blackboxindia.PostIT.CustomViews.SquareCard>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</ScrollView>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/profile_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/Profile_image"
+                android:src="@drawable/avatar"
+
+                />
+            <Button
+                android:id="@+id/profile_btnImageChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@color/img_text"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:padding="10dp"
+                android:text="@string/change"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                />
+        </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/profile_etName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:inputType="textPersonName"
+            android:text="@string/name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_frame"
+            />
+
+        <ImageView
+            android:id="@+id/profile_verifiedIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_margin="14dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_error"
+            app:layout_constraintLeft_toRightOf="@id/profile_etName"
+            app:layout_constraintTop_toTopOf="@id/profile_etName"
+            app:layout_constraintBottom_toBottomOf="@id/profile_etName"
+            android:clickable="true"
+            android:visibility="invisible"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profile_etEmailFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_etName">
+
+      <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="none"
+                android:focusable="false"
+                android:editable="false"
+                android:enabled="true"
+                tools:ignore="Deprecated" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profile_etAddressFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_etEmailFrame">
+
+      <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/roomNumber"
+                android:inputType="textPostalAddress"
+                />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/profile_hostelSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/profile_etAddressFrame"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:spinnerMode="dialog"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toRightOf="@id/profile_hostelSpinner"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/profile_hostelSpinner"
+            app:layout_constraintBottom_toBottomOf="@id/profile_hostelSpinner"
+            app:layout_constraintHorizontal_bias="0.15"
+            android:layout_marginEnd="30dp">
+
+            <ImageView
+                android:id="@+id/profile_hostelError"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_error"
+                android:contentDescription="@string/error_image"
+                android:visibility="invisible"/>
+
+            <ProgressBar
+                android:id="@+id/profile_hostelProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profile_etCollegeFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_hostelSpinner">
+
+      <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_etCollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/sample_college"
+                android:inputType="none"
+                android:focusable="false"
+                android:editable="false"
+                android:enabled="true"
+                tools:ignore="Deprecated"
+                />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/profile_etPhoneFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_etCollegeFrame">
+
+      <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/profile_btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/label_update_changes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_etPhoneFrame"
+            />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
