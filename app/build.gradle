@@ -18,7 +18,7 @@ android {
     }
     compileSdkVersion 33
     defaultConfig {
-        applicationId "com.blackboxindia.PostIt"
+        applicationId "com.blackboxindia.bitcampusfriend"
         minSdkVersion 21
         targetSdkVersion 33
         versionName '2.4'
@@ -33,7 +33,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.BlackBox_India
             pseudoLocalesEnabled true
-//            proguardFile 'C:/Users/Roger/AndroidStudioProjects/PostIt/app/proguard-rules.pro'
         }
     }
     productFlavors {

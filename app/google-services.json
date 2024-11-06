@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "805645447847",
-    "firebase_url": "https://takeit-6e751.firebaseio.com",
-    "project_id": "takeit-6e751",
-    "storage_bucket": "takeit-6e751.appspot.com"
+    "project_number": "86584386854",
+    "firebase_url": "https://campusfriendbit-default-rtdb.firebaseio.com",
+    "project_id": "campusfriendbit",
+    "storage_bucket": "campusfriendbit.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:805645447847:android:a95f117b6f9ad1f6",
+        "mobilesdk_app_id": "1:86584386854:android:f2c97312e9588f51bb4de7",
         "android_client_info": {
-          "package_name": "com.blackboxindia.PostIt"
+          "package_name": "com.blackboxindia.bitcampusfriend"
         }
       },
       "oauth_client": [
         {
-          "client_id": "805645447847-ba39a0ljm06vosklnqf20qhhg5ei0k6p.apps.googleusercontent.com",
+          "client_id": "86584386854-kptnagsjn988q7bdfcqgf4h8irc4mcc6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB4SjK8NtjGYeECfNuoW-jgvBCpmijGqMQ"
+          "current_key": "AIzaSyA1nxfkiRuzkeV_OXjz3kjc4EgUqp5t0fY"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86584386854-kptnagsjn988q7bdfcqgf4h8irc4mcc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

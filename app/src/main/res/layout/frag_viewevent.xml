@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.blackboxindia.PostIT.CustomViews.LockableScrollView
+<com.blackboxindia.bitcampusfriend.CustomViews.LockableScrollView
     android:id="@+id/lockableScrollView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -227,4 +227,4 @@
 
     </FrameLayout>
 
-</com.blackboxindia.PostIT.CustomViews.LockableScrollView>
+</com.blackboxindia.bitcampusfriend.CustomViews.LockableScrollView>

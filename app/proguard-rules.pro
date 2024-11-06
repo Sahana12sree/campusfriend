@@ -41,11 +41,11 @@
 
 -keepattributes Signature
 
--keepclassmembers class com.blackboxindia.PostIT.dataModels.AdData.** { *; }
--keepclassmembers class com.blackboxindia.PostIT.dataModels.AdTypes.** { *; }
--keepclassmembers class com.blackboxindia.PostIT.dataModels.UserInfo.** { *; }
+-keepclassmembers class com.blackboxindia.bitcampusfriend.dataModels.AdData.** { *; }
+-keepclassmembers class com.blackboxindia.bitcampusfriend.dataModels.AdTypes.** { *; }
+-keepclassmembers class com.blackboxindia.bitcampusfriend.dataModels.UserInfo.** { *; }
 
--keep public class com.blackboxindia.PostIT.dataModels.** {
+-keep public class com.blackboxindia.bitcampusfriend.dataModels.** {
   public protected *;
 }
 

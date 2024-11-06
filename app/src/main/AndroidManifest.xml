@@ -2,14 +2,14 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.blackboxindia.PostIT">
+    package="com.blackboxindia.bitcampusfriend">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".MyApplication"
+        android:name="com.blackboxindia.bitcampusfriend.MyApplication"
         android:allowBackup="false"
         android:icon="@drawable/bitcflogo"
         android:roundIcon="@drawable/ic_app_round"
@@ -20,13 +20,14 @@
         tools:replace="android:allowBackup">
 
         <activity
-            android:name="com.blackboxindia.PostIT.activities.MainActivity"
+            android:name="com.blackboxindia.bitcampusfriend.activities.MainActivity"
             android:label="campus friend"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             android:theme="@style/AppTheme.NoActionBar"
-          tools:ignore="LockedOrientationActivity">
+          tools:ignore="LockedOrientationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -39,22 +40,24 @@
         </activity>
 
         <activity
-            android:name="com.blackboxindia.PostIT.activities.OnboardingActivity"
+            android:name="com.blackboxindia.bitcampusfriend.activities.OnboardingActivity"
             android:label="@string/title_activity_onboarding"
             android:screenOrientation="portrait"
           android:theme="@style/AppTheme.NoActionBar"
-          tools:ignore="LockedOrientationActivity">
+          tools:ignore="LockedOrientationActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
 
         <activity
-            android:name="com.blackboxindia.PostIT.activities.SplashScreen"
+            android:name="com.blackboxindia.bitcampusfriend.activities.SplashScreen"
             android:windowSoftInputMode="stateHidden"
             android:screenOrientation="portrait"
           android:theme="@style/AppTheme.NoActionBar"
-          tools:ignore="LockedOrientationActivity">
+          tools:ignore="LockedOrientationActivity"
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -74,7 +77,8 @@
         </provider>
 
         <service
-            android:name=".Services.NotificationService">
+            android:name="com.blackboxindia.bitcampusfriend.Services.NotificationService"
+            android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
